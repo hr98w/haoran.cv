@@ -17,25 +17,25 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
-  description: 'The personal website of Andrei Hudovich, a freelance full stack engineer.',
+  description: 'The personal website of Haoran Wang, a SDE and Solopreneur.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'Andrei Hudovich',
-    title: 'The personal website of Andrei Hudovich',
-    description: 'A freelance full stack engineer.',
+    siteName: 'Haoran Wang',
+    title: 'The personal website of Haoran Wang',
+    description: 'SDE and Solopreneur',
     url: '/',
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@AndreiHudovich',
+    site: '@hr98w',
   },
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={cn(outfit.variable, 'h-full')} suppressHydrationWarning={true}>
-      <head>
+      {/* <head>
         <PlausibleProvider
           domain="hudovich.dev"
           customDomain={process.env.NEXT_PUBLIC_PLAUSIBLE_CUSTOM_DOMAIN}
@@ -43,7 +43,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           trackOutboundLinks={true}
           trackFileDownloads={true}
         />
-      </head>
+      </head> */}
 
       <body className="h-full min-h-full bg-white font-[350] text-dark-blue-950 antialiased dark:bg-blue-950 dark:text-slate-300">
         <ThemeProvider disableTransitionOnChange={true}>

@@ -164,11 +164,11 @@ const skillsData = [
 
 const workHistoryData = [
   {
-    title: 'Lead Front-end Engineer',
+    title: 'Backend SDE',
     meta: {
       company: {
-        name: 'Propbar',
-        link: 'https://www.propbar.co.uk/',
+        name: 'Hotstar',
+        link: 'https://hotstar.com',
       },
       country: {
         Icon: IconFlagUK,
@@ -176,93 +176,8 @@ const workHistoryData = [
       },
       position: 'Full-Time',
     },
-    date: 'Mar 2023 ‐ Present',
-    content: [
-      'Led the front-end work from the project inception.',
-      'Maintained a browser extension, widget and web application as a monorepo.',
-      'Architected a highly complex real-estate map service.',
-      'Implemented a sophisticated data grid of property comparables.',
-    ],
-  },
-  {
-    title: 'Senior Front-end Engineer',
-    meta: {
-      company: {
-        name: 'LolaDB',
-      },
-      country: {
-        Icon: IconFlagUSA,
-        name: 'United States',
-      },
-      position: 'Contract',
-    },
-    date: 'Jun 2022 ‐ Feb 2023',
-    content: [
-      'Was solving complex problems using the latest Web Standards.',
-      "Architected the product's front-end structure.",
-      'Accomplished the development of sophisticated UI components.',
-      'Developed the open-source component library.',
-      'Crafted responsive marketing landing pages.',
-    ],
-  },
-  {
-    title: 'Senior Front-end Engineer',
-    meta: {
-      company: {
-        name: 'Casago',
-        link: 'https://casago.com/',
-      },
-      country: {
-        Icon: IconFlagUSA,
-        name: 'United States',
-      },
-      position: 'Full-Time',
-    },
-    date: 'Oct 2021 ‐ Apr 2022',
-    content: [
-      "Joined the new company after Nokori's acquisition.",
-      'Helped to adapt and embed the new assets into the franchise ecosystem.',
-      'Developed the ground for the new property analytics project.',
-    ],
-  },
-  {
-    title: 'Middle Front-end Engineer',
-    meta: {
-      company: {
-        name: 'Nokori',
-      },
-      country: {
-        Icon: IconFlagUSA,
-        name: 'United States',
-      },
-      position: 'Full-Time',
-    },
-    date: 'Jul 2020 ‐ Oct 2021',
-    content: [
-      'Acted as a primary and sole front-end developer of the team.',
-      'Was responsible for the development of the single-page application.',
-      'Worked on responsive static marketing pages.',
-      'Managed the migration from Vue 2 codebase to Vue 3 and Composition API.',
-    ],
-  },
-  {
-    title: 'Front-end Developer',
-    meta: {
-      company: {
-        name: 'Freelance Platforms',
-      },
-      country: {
-        Icon: IconFlagWorldwide,
-        name: 'Worldwide',
-      },
-    },
-    date: 'Jan 2015 ‐ Jul 2020',
-    content: [
-      'Kick-started my developing career as a PSD-to-HTML developer.',
-      'Helped dozens of clients around the world to build and deploy their websites.',
-      'Worked hard to meet client deadlines.',
-      'Matured as a self-taught front-end engineer.',
-    ],
+    date: 'Jun 2021 ‐ Present',
+    content: ['Subscriptions'],
   },
 ]
 
@@ -294,7 +209,7 @@ export default function ResumePage() {
           bit outdated.
         </p>
 
-        <ul className="flex flex-wrap gap-x-5 gap-y-4 font-normal text-caption md:gap-5">
+        {/* <ul className="flex flex-wrap gap-x-5 gap-y-4 font-normal text-caption md:gap-5">
           {skillsData.map((skill) => (
             <li key={skill.label} className={cn('flex items-center gap-2', skill.className)}>
               {skill.Logo ? (
@@ -315,16 +230,16 @@ export default function ResumePage() {
               {skill.label}
             </li>
           ))}
-        </ul>
+        </ul> */}
       </section>
 
       <section>
         <div className="mb-8">
           <h2 className="mb-2 font-semibold text-heading-3 dark:text-slate-100">Work History</h2>
           <p className="text-body-3 md:text-body-2">
-            Below you will find a summary of my past employment experience. Additionally, if you
-            require, you can{' '}
-            <span className="inline-flex items-center gap-1.5">
+            Below you will find a summary of my past employment experience.
+            {/* Additionally, if you require, you can{' '} */}
+            {/* <span className="inline-flex items-center gap-1.5">
               <BaseTextLink
                 className="font-medium dark:text-slate-100"
                 href="/resume.pdf"
@@ -333,7 +248,7 @@ export default function ResumePage() {
                 download my resume
               </BaseTextLink>
               <BaseIcon as={IconSolidFilePdf} className="translate-y-px size-4" />
-            </span>
+            </span> */}
           </p>
         </div>
 
@@ -370,7 +285,7 @@ export default function ResumePage() {
                   ) : (
                     item.meta.company.name
                   )}
-
+                  {/* 
                   <span
                     className="size-1.5 rounded-full bg-neutral-300 dark:bg-slate-600"
                     role="none"
@@ -379,7 +294,7 @@ export default function ResumePage() {
                   <span className="flex items-center gap-x-2">
                     <BaseIcon as={item.meta.country.Icon} className="w-4 h-3" />
                     {item.meta.country.name}
-                  </span>
+                  </span> */}
 
                   {item.meta.position && (
                     <span

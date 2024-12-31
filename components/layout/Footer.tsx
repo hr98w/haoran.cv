@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import IconSolidCodeBranch from '@/assets/icons/icon-solid-code-branch.svg'
 import IconSolidHeart from '@/assets/icons/icon-solid-heart.svg'
-import IconSolidPersonHiking from '@/assets/icons/icon-solid-person-hiking.svg'
 import Container from '@/components/layout/Container.tsx'
 import BaseIcon from '@/components/ui/BaseIcon.tsx'
 import links from '@/data/links.json'
@@ -9,10 +8,10 @@ import type { FC, SVGProps } from 'react'
 import type { Route } from 'next'
 
 const textLinks: Array<{ href: Route; label: string }> = [
-  {
-    href: '/tech-stack',
-    label: 'Tech Stack',
-  },
+  // {
+  //   href: '/tech-stack',
+  //   label: 'Tech Stack',
+  // },
   {
     href: '/profiles',
     label: 'Profiles',
@@ -25,11 +24,6 @@ const iconLinks: Array<{
   Icon: FC<SVGProps<SVGElement>>
   isExternal?: boolean
 }> = [
-  {
-    href: '/hiking',
-    label: 'Hiking diary',
-    Icon: IconSolidPersonHiking,
-  },
   {
     href: links.source,
     label: 'Source code',
@@ -89,7 +83,7 @@ function Footer() {
             label="love"
             className="shrink-0 translate-y-px size-3.5 text-[#ef3939]"
           />
-          by Andrei Hudovich
+          by Haoran
         </p>
       </Container>
     </footer>

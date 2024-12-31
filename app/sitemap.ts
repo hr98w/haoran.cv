@@ -10,22 +10,18 @@ const pages: Array<{ url: Route | null; priority: number }> = [
     url: '/contact',
     priority: 0.8,
   },
-  {
-    url: '/hiking',
-    priority: 0.7,
-  },
-  {
-    url: '/resume',
-    priority: 0.9,
-  },
-  {
-    url: '/tech-stack',
-    priority: 0.7,
-  },
-  {
-    url: '/uses',
-    priority: 0.7,
-  },
+  // {
+  //   url: '/resume',
+  //   priority: 0.9,
+  // },
+  // {
+  //   url: '/tech-stack',
+  //   priority: 0.7,
+  // },
+  // {
+  //   url: '/uses',
+  //   priority: 0.7,
+  // },
   {
     url: '/profiles',
     priority: 0.7,

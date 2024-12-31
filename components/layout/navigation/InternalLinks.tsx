@@ -7,14 +7,14 @@ import type { ComponentPropsWithoutRef } from 'react'
 import type { Route } from 'next'
 
 const links: Array<{ href: Route; label: string }> = [
-  {
-    href: '/resume',
-    label: 'Resume',
-  },
-  {
-    href: '/uses',
-    label: 'Uses',
-  },
+  // {
+  //   href: '/resume',
+  //   label: 'Resume',
+  // },
+  // {
+  //   href: '/uses',
+  //   label: 'Uses',
+  // },
   {
     href: '/contact',
     label: 'Contact',
