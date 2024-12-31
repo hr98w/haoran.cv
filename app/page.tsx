@@ -5,6 +5,8 @@ import IconBrandsReddit from '@/assets/icons/icon-brands-reddit.svg'
 // import IconBrandsUpwork from '@/assets/icons/icon-brands-upwork.svg'
 import IconBrandsXTwitter from '@/assets/icons/icon-brands-x-twitter.svg'
 import IconSolidArrowUpRightFromSquare from '@/assets/icons/icon-solid-arrow-up-right-from-square.svg'
+import IconQrcode from '@/assets/icons/icon-solid-qr-code.svg'
+import ScanLine from '@/assets/icons/scan-line.svg'
 import Container from '@/components/layout/Container.tsx'
 import BaseIcon from '@/components/ui/BaseIcon.tsx'
 import BaseSeparator from '@/components/ui/BaseSeparator.tsx'
@@ -47,7 +49,7 @@ const linksList: Array<{ href: string; label: string; Icon: FC<SVGProps<SVGEleme
 ]
 
 export const metadata: Metadata = {
-  title: 'Haoran Wang',
+  title: 'Haoran - haoran.cv',
   alternates: {
     canonical: '/',
   },
@@ -64,7 +66,7 @@ export default function HomePage() {
 
         <p className="mb-4 text-body-2 sm:max-w-xl md:mb-5 md:max-w-none md:text-body-1">
           Backend engineer based in Beijing <br className="hidden md:block" />
-          Indie developer building something <br className="hidden md:block" />
+          Building something as a solopreneur and indie developer <br className="hidden md:block" />
         </p>
 
         <BaseSeparator />
@@ -100,8 +102,19 @@ export default function HomePage() {
           </article>
 
           <article>
-            <h3 className="mb-1 font-semibold text-heading-5 dark:text-slate-100">
+            <h3 className="mb-1 font-semibold text-heading-5 dark:text-slate-100 flex items-center gap-2">
               Wechat Official Account (微信公众号)
+              <div className="group">
+                <BaseIcon
+                  as={IconQrcode}
+                  className="size-6 text-dark-blue-950 transition-colors dark:text-slate-100 group-hover:text-dark-blue-950 dark:group-hover:text-white"
+                />
+                <img
+                  src="/qr.webp"
+                  alt="WeChat QR Code"
+                  className="absolute hidden group-hover:block w-48 aspect-square left-1/2 -translate-x-1/2 mt-2 z-10 rounded-lg shadow-lg object-contain"
+                />
+              </div>
             </h3>
             <p className="mb-3 text-body-3 md:text-body-2">Writing and sharing.</p>
             <a
@@ -165,7 +178,7 @@ export default function HomePage() {
         </ul>
       </section>
 
-      <section>
+      {/* <section>
         <h2 className="mb-1 font-medium text-heading-5 dark:text-slate-100">Contact</h2>
         <p className="text-body-3 md:text-body-2">
           You can reach me out anytime at{' '}
@@ -176,7 +189,7 @@ export default function HomePage() {
             {links.contact.email}
           </BaseTextLink>
         </p>
-      </section>
+      </section> */}
     </Container>
   )
 }

@@ -182,7 +182,7 @@ const workHistoryData = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Resume | Andrei Hudovich',
+  title: 'Resume | haoran.cv',
   alternates: {
     canonical: `${getCurrentDirName(import.meta.url)}`,
   },

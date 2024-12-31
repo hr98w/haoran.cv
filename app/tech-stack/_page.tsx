@@ -79,7 +79,7 @@ const data = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Tech Stack | Andrei Hudovich',
+  title: 'Tech Stack | haoran.cv',
   alternates: {
     canonical: `${getCurrentDirName(import.meta.url)}`,
   },

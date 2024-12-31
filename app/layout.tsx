@@ -17,12 +17,12 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
-  description: 'The personal website of Haoran Wang, a SDE and Solopreneur.',
+  description: 'The personal website of Haoran',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'Haoran Wang',
-    title: 'The personal website of Haoran Wang',
+    siteName: 'haoran.cv',
+    title: 'haoran.cv',
     description: 'SDE and Solopreneur',
     url: '/',
   },

@@ -5,7 +5,7 @@ import BaseSeparator from '@/components/ui/BaseSeparator.tsx'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: '404 | Andrei Hudovich',
+  title: '404 | haoran.cv',
 }
 
 export default function NotFoundPage() {

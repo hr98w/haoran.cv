@@ -7,7 +7,7 @@ import { getCurrentDirName } from '@/utils/url.ts'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact | Andrei Hudovich',
+  title: 'Contact | haoran.cv',
   alternates: {
     canonical: `${getCurrentDirName(import.meta.url)}`,
   },

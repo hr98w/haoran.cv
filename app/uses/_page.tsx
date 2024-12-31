@@ -148,7 +148,7 @@ const indieData = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Uses | Andrei Hudovich',
+  title: 'Uses | haoran.cv',
   alternates: {
     canonical: `${getCurrentDirName(import.meta.url)}`,
   },
