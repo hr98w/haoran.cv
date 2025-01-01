@@ -13,7 +13,7 @@ function Header() {
     <header>
       <Container className="flex justify-between items-center h-20" isFluid={true}>
         <Link href="/">
-          <BaseIcon as={Logo} className="w-[4.125rem] h-6" label="Home" />
+          {/* <BaseIcon as={Logo} className="w-[4.125rem] h-6" label="Home" /> */}
         </Link>
 
         {/* `className` is applied to both root and DialogContent */}
