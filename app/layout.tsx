@@ -35,15 +35,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={cn(outfit.variable, 'h-full')} suppressHydrationWarning={true}>
-      {/* <head>
+      <head>
         <PlausibleProvider
-          domain="hudovich.dev"
+          domain="haoran.cv"
           customDomain={process.env.NEXT_PUBLIC_PLAUSIBLE_CUSTOM_DOMAIN}
           selfHosted={true}
           trackOutboundLinks={true}
           trackFileDownloads={true}
         />
-      </head> */}
+      </head>
 
       <body className="h-full min-h-full bg-white font-[350] text-dark-blue-950 antialiased dark:bg-blue-950 dark:text-slate-300">
         <ThemeProvider disableTransitionOnChange={true}>
