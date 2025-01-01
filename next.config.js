@@ -1,3 +1,4 @@
+import next from 'next'
 import { withPlausibleProxy } from 'next-plausible'
 
 /** @type {import('next').NextConfig} */
@@ -41,6 +42,8 @@ const nextConfig = {
   },
 }
 
-export default withPlausibleProxy({
-  customDomain: process.env.NEXT_PUBLIC_PLAUSIBLE_CUSTOM_DOMAIN,
-})(nextConfig)
+// export default withPlausibleProxy({
+//   customDomain: process.env.NEXT_PUBLIC_PLAUSIBLE_CUSTOM_DOMAIN,
+// })(nextConfig)
+
+export default nextConfig
